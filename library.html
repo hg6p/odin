@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="library.css" />
+    <script src="library.js"></script>
+  </head>
+  <body onload="displayBooks()">
+    <main>
+      <h1>library</h1>
+      <div id="shelf">
+        <!--  -->
+      </div>
+      <aside>
+        Dodaj knjigu
+        <button onclick="addBookToLibrary()">dodaj</button>
+        <form id="add-form">
+          <div class="modal-content">
+            <span class="close" onclick="qq()">&times;</span>
+            <p>Name of the book:</p>
+            <input type="text" />
+            <p>Name of the author:</p>
+            <input type="text" />
+            <p>Number of the pages:</p>
+            <input type="text" />
+            <p>Did you read it :</p>
+            <input type="checkbox" />
+            <button type="button" onclick="addBook()">Add..</button>
+          </div>
+        </form>
+      </aside>
+    </main>
+  </body>
+</html>
