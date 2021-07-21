@@ -6,32 +6,33 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="library.css" />
-    <script src="library.js"></script>
   </head>
-  <body onload="displayBooks()">
+  <body>
     <main>
-      <h1>library</h1>
-      <div id="shelf">
-        <!--  -->
-      </div>
-      <aside>
-        Dodaj knjigu
-        <button onclick="addBookToLibrary()">dodaj</button>
-        <form id="add-form">
-          <div class="modal-content">
-            <span class="close" onclick="qq()">&times;</span>
-            <p>Name of the book:</p>
-            <input type="text" />
-            <p>Name of the author:</p>
-            <input type="text" />
-            <p>Number of the pages:</p>
-            <input type="text" />
-            <p>Did you read it :</p>
-            <input type="checkbox" />
-            <button type="button" onclick="addBook()">Add..</button>
+      <h1>Library</h1>
+      <div class="container">
+        
+         <div id="input-form" class="card crd-flx">
+        <div class=wrap>
+          <h2>Add Book</h2>
+          <button type="button">add Book</button>
           </div>
+           <div id="input-form">
+        <form>
+          <p>Name of the book</p>
+          <input id="input-book" type="text" placeholder="title">
+          <p>Name of the author</p>
+          <input id="input-author" type="text" placeholder="author">
+          <p>Number of pages</p>
+          <input id="input-pages" type="text" placeholder="pages">
+          <p>Have you read it </p>
+          <input id="read-book" type="checkbox">
+          <button type="button">Add</button>
         </form>
-      </aside>
+      </div>
+      </div>
     </main>
   </body>
+    <script src="library.js"></script>
+
 </html>

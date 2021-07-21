@@ -1,33 +1,46 @@
-form {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
-.modal-content {
-  background-color: #161515;
-  margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+:root {
+  font-size: 100%;
 }
-.close {
-  color: #080707;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+h1 {
+  text-align: center;
 }
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
+.container {
+  display: flex;
+}
+.card {
+  width: 300px;
+  height: 350px;
+  border-radius: 10px;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(78, 46, 129, 1) 100%
+  );
+}
+.crd-flx {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px 10px;
+  padding: 30px;
+}
+.wrap {
+  display: none;
+}
+button {
+  display: block;
+  margin: auto;
+  padding: 5px;
+}
+input[type='checkbox'] {
+  display: block;
+  margin: auto;
+  margin-bottom: 15px;
 }
